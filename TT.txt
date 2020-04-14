@@ -1,0 +1,23 @@
+<button type="submit" class="btn intro-btn signup-submit">«‰‘«¡ «·Õ”«»</button>
+
+<button type="submit" class="btn intro-btn signin-submit"> ”ÃÌ· «·œŒÊ·</button>
+
+-----------------------------------------------------------------------------------
+
+ <select id="inputState" class="form-control" id="validationCustomState"
+                      aria-describedby="inputGroupPrepend" required>
+                      <option></option>
+                      <option>ÕœÌÀ «·Ê·«œ…</option>
+                      <option>1-2</option>
+                      <option>2-5</option>
+                      <option>5-10</option>
+                      <option>10-15</option>
+                      <option>15-30</option>
+                      <option>30-50</option>
+                      <option>50-70</option>
+                      <option>«ﬂ»— „‰ 70</option>
+                    </select>
+
+
+-------------------------------------------------------------------------
+         accept="image/x-png,image/gif,image/jpeg"

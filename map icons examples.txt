@@ -1,0 +1,6 @@
+https://developers.google.com/maps/documentation/javascript/examples
+
+
+icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+
+  icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'

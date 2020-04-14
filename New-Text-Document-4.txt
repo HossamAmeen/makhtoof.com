@@ -1,0 +1,46 @@
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <title>All Mechanics</title> 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtxTjUI11VOLaFVnOVYd5cYW3o0e0_cxQ&callback=myMap"></script>
+</head> 
+<body>
+  <div id="map" style="width: 100%;height:580px;"></div>
+
+  <script type="text/javascript">
+    var locations = [
+    @foreach($locations as $location)
+      ['{{$location->address}}', {{$location->latitude}}, {{$location->longitude}}],
+      // ['Coogee Beach', 27.1955446, 31.1756373],
+      // ['Cronulla Beach', 27.2053315, 31.1945828],
+      // ['Manly Beach', 27.2027018, 31.1952399],
+      @endforeach
+    ];
+    
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(27.1810298,31.1792783),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+  
+</body>
+</html>
