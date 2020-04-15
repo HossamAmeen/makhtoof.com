@@ -78,13 +78,13 @@ Route::group(['middleware'=>'roles', 'roles'=>['admin']],function(){
     Route::post('/animationphoto','adminController@animationphoto')->name('animationphoto');
     Route::post('/gallaryphoto','adminController@gallaryphoto')->name('gallaryphoto');
     Route::post('/info','adminController@info')->name('info');
- 
+
     Route::get('/feedback','adminController@feedback')->name('feedback');
     Route::post('/deletequest','adminController@deletequest')->name('deletequest');
 
     Route::get('/adminaboutus','adminController@aboutus')->name('adminaboutus');
     Route::post('/saveinfo','adminController@saveinfo')->name('saveinfo');
-    
+
 
 
     Route::get('/index','adminController@index')->name('index');
