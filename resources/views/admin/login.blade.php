@@ -1,4 +1,22 @@
-﻿<!DOCTYPE html>
+﻿@if(Auth::check())
+@if(Auth::user()->isAdmin==1)
+  <script>
+
+
+ window.location.href = '{{route("index")}}'; //using a named route
+</script>
+@endif
+
+@if(Auth::user()->isAdmin==0)
+  <script>
+
+
+ window.location.href = '{{route("home")}}'; //using a named route
+</script>
+@endif
+@endif
+
+<!DOCTYPE html>
 <html>
 
 <head>
