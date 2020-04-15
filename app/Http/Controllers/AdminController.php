@@ -207,7 +207,7 @@ public function deletequest(Request $request)
     {
         $logo=Home::find(1);
         //dd(count($logo));
-        if(count($logo)==0) {
+        if(isset($logo)==0) {
             $logo = new Home;
         }
         $logo->welcome_title=$request->w_title;
@@ -274,7 +274,7 @@ public function deletequest(Request $request)
 
     $logo=Home::find(1);
     //dd(count($logo));
-    if(count($logo)==0) {
+    if(isset($logo)==0) {
         $logo = new Home;
     }
 
@@ -313,7 +313,7 @@ public function deletequest(Request $request)
 
         $logo=Home::find(1);
         //dd(count($logo));
-        if(count($logo)==0) {
+        if(isset($logo)==0) {
             $logo = new Home;
         }
 
@@ -341,7 +341,7 @@ public function deletequest(Request $request)
     public function saveinfo(Request $request)
     {
         $logo=Home::find(1);
-        if(count($logo)==0) {
+        if(isset($logo)==0) {
             $logo = new Home;
         }
 
