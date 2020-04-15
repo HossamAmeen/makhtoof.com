@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('city')->nullable();
             $table->string('phone')->nullable();
             $table->string('gender')->nullable();
+            $table->integer('isAdmin');
             $table->timestamps();
         });
     }

@@ -32,9 +32,11 @@
       </li>
 
       @if(Auth::check())
+        @if(Auth::user()->isAdmin==0)
         <li class="nav-item">
           <a class="nav-link" href="{{route('newpost')}}">إعلن عن مفقود</a>
         </li>
+        @endif
       @endif
         <li class="nav-item">
           <a class="nav-link" href="{{route('search')}}">بحــث</a>
@@ -55,6 +57,7 @@
 
       <!-- if signed in -->
       @if(Auth::check())
+         @if(Auth::user()->isAdmin==0)
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
              aria-haspopup="true" aria-expanded="false">
@@ -67,6 +70,12 @@
             <a class="dropdown-item" href="{{route('logout')}}">تسجيل الخروج</a>
           </div>
         </li>
+        @endif
+        @if(Auth::user()->isAdmin==1)
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('index')}}">الذهاب الى لوحة التحكم </a>
+        </li>
+        @endif
       @endif
     </ul>
   </div>

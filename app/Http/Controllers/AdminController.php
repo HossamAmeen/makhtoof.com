@@ -53,6 +53,7 @@ public function deletequest(Request $request)
         $user->firstName=$request->fname;
         $user->email=$request->email;
         $user->password=bcrypt($request->pass);
+        $user->isAdmin=1;
         $user->save();
 
         //add role

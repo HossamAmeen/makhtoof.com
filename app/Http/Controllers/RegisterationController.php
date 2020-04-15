@@ -39,6 +39,7 @@ class registerationController extends Controller
         $user->city=$request->city;
         $user->phone=$request->phone;
         $user->gender=$request->gender;
+        $user->isAdmin=0;
         $user->save();
 
         //add role
