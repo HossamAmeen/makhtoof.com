@@ -103,7 +103,7 @@
                 position: new google.maps.LatLng(locations[i][1] + t / 2000, locations[i][2] + t),
                 map: map,
                 icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
-                url:'http://127.0.0.1:8000/showpost/'+ddid[i]
+                url:'http://makhtoof.com/showpost/'+ddid[i]
             });
 
             @elseif($c==2)
@@ -112,7 +112,7 @@
                 position: new google.maps.LatLng(locations[i][1] + t / 2000, locations[i][2] + t),
                 map: map,
                 icon: 'https://maps.google.com/mapfiles/kml/shapes/library_maps.png',
-                url:'http://127.0.0.1:8000/showpost/showpost/'+ddid[i]
+                url:'http://makhtoof.com/showpost/showpost/'+ddid[i]
 
             });
             @else
@@ -120,7 +120,7 @@
                 position: new google.maps.LatLng(locations[i][1] + t / 2000, locations[i][2] + t),
                 map: map,
                 icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                url:'http://127.0.0.1:8000/showpost/'+ddid[i]
+                url:'http://makhtoof.com/showpost/'+ddid[i]
             });
             @endif
             google.maps.event.addListener(marker[i], 'click', function () {
