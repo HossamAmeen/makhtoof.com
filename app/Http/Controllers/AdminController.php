@@ -180,7 +180,7 @@ public function deletequest(Request $request)
 
         $logo=Home::find(1);
        //dd(count($logo));
-        if(count($logo)==0) {
+        if(isset($logo)==0) {
             $logo = new Home;
         }
         if($request->hasFile('m_i')) {
