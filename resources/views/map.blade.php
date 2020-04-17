@@ -112,7 +112,7 @@
                 position: new google.maps.LatLng(locations[i][1] + t / 2000, locations[i][2] + t),
                 map: map,
                 icon: 'https://maps.google.com/mapfiles/kml/shapes/library_maps.png',
-                url:'http://makhtoof.com/showpost/showpost/'+ddid[i]
+                url:'http://makhtoof.com/showpost/'+ddid[i]
 
             });
             @else
