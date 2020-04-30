@@ -21,30 +21,30 @@ class CreateHomesTable extends Migration
             $table->string('small_logo')->nullable();
 
             $table->string('welcome_title')->nullable();
-            $table->text('welcome_text')->nullable();
+            $table->longText('welcome_text')->nullable();
             $table->string('welcome_image')->nullable();
 
             $table->string('Animation_title1')->nullable();
-            $table->string('Animation_text1')->nullable();
+            $table->longText('Animation_text1')->nullable();
             $table->string('Animation_image1')->nullable();
             $table->string('Animation_title2')->nullable();
-            $table->string('Animation_text2')->nullable();
+            $table->longText('Animation_text2')->nullable();
             $table->string('Animation_image2')->nullable();
             $table->string('Animation_title3')->nullable();
-            $table->string('Animation_text3')->nullable();
+            $table->longText('Animation_text3')->nullable();
             $table->string('Animation_image3')->nullable();
             $table->string('Animation_title4')->nullable();
-            $table->string('Animation_text4')->nullable();
+            $table->longText('Animation_text4')->nullable();
             $table->string('Animation_image4')->nullable();
 
             $table->string('gallary_title1')->nullable();
-            $table->string('gallary_text1')->nullable();
+            $table->longText('gallary_text1')->nullable();
             $table->string('gallary_image1')->nullable();
             $table->string('gallary_title2')->nullable();
-            $table->string('gallary_text2')->nullable();
+            $table->longText('gallary_text2')->nullable();
             $table->string('gallary_image2')->nullable();
             $table->string('gallary_title3')->nullable();
-            $table->string('gallary_text3')->nullable();
+            $table->longText('gallary_text3')->nullable();
             $table->string('gallary_image3')->nullable();
 
             $table->string('about_phone')->nullable();
@@ -53,21 +53,21 @@ class CreateHomesTable extends Migration
             $table->string('about_twiteer')->nullable();
             $table->string('about_linkedin')->nullable();
             $table->string('about_youtube')->nullable();
-            $table->text('who_us')->nullable();
-            $table->text('mission')->nullable();
-            $table->text('Vision')->nullable();
+            $table->longText('who_us')->nullable();
+            $table->longText('mission')->nullable();
+            $table->longText('Vision')->nullable();
 
             $table->string('about_title1')->nullable();
-            $table->string('about_text1')->nullable();
+            $table->longText('about_text1')->nullable();
             $table->string('about_image1')->nullable();
             $table->string('about_title2')->nullable();
-            $table->string('about_text2')->nullable();
+            $table->longText('about_text2')->nullable();
             $table->string('about_image2')->nullable();
             $table->string('about_title3')->nullable();
-            $table->string('about_text3')->nullable();
+            $table->longText('about_text3')->nullable();
             $table->string('about_image3')->nullable();
             $table->string('about_title4')->nullable();
-            $table->string('about_text4')->nullable();
+            $table->longText('about_text4')->nullable();
             $table->string('about_image4')->nullable();
             $table->timestamps();
         });

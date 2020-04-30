@@ -150,9 +150,9 @@
 
         @if($h->about_linkedin)
         @if ($h->about_linkedin[0]=="h")
-        <a href="{{$h->about_linkedin}}" ><img class="footer-icon" src="{{asset('imgs/social-instagram-new-circle-512.png')}}"></a>
+        <a href="{{$h->about_linkedin}}" ><img class="footer-icon" src="{{asset('imgs/insta.png')}}"></a>
         @else 
-        <a href="https://{{$h->about_linkedin}}" ><img class="footer-icon" src="{{asset('imgs/social-instagram-new-circle-512.png')}}"></a>
+        <a href="https://{{$h->about_linkedin}}" ><img class="footer-icon" src="{{asset('imgs/insta.png')}}"></a>
         @endif
         @endif
         @endif
